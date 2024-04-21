@@ -50,14 +50,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#mista">SPANÍ</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">LIDÉ</a>
-                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#vase-ucast">VAŠE ÚČAST</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#svatebni-dary">SVATEBNÍ DARY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lide">LIDÉ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#kontakt">KONTAKT</a>
@@ -202,13 +202,12 @@
         </p>
 
         <p>V první řadě si chceme tento pro nás významný den s vámi všemi užít. Tudíž chceme, aby se každý cítil dobře a
-            zvolil si oblečení na odpolední zábavu dle jeho nebo jejích představ,
-            jen tedy na obřad bychom rádi slušnější oděv.
-            Obřad budeme mít na starém nevyužívaném letišti, ale přesto bychom vás rádi požádali, aby pánové přišli na
-            obřad v obleku, případně prosím aspoň o černé kalhoty a košili. Slečny a dámy,
-            aby se oblékli slavnostně a vyhnuly se bílým a červeným šatům jak je na svatbách zvykem. Pokud si chcete
+            zvolil si oblečení na odpolední zábavu dle vašich představ,
+            jen na obřad bychom rádi slušnější oděv.
+            Obřad budeme mít na starém nevyužívaném letišti, ale přesto bychom vás rádi požádali, aby jste se oblékli 
+            slavnostně a slečny a ženy se vyhnuly bílým šatům, jak je na svatbách zvykem. Pokud si chcete
             vzít podpatky, tak to v nich zvládnete.
-            Budeme se pohybvat buď po asfaltu či potom v kulturním domě a okolí.
+            Budeme se pohybvat buď po asfaltu nebo potom v kulturním domě a okolí.
         </p>
 
         <p>Po obřadu bude následovat pár fotografíí. Nevěsta se v rychlosti převlékne a bude následovat "první tanec
@@ -344,10 +343,12 @@
         <hr class="vertical-line">
     </div>
 
-    <div class="container">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
         <h1 id="vase-ucast">Vaše účast</h1>
         <p>Prosím o vyplnění krátkého dotazníku. Moc mi to pomůže s organizací a plánováním, abychom pro vás mohli udělat maximum.</p>
 
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc__HL2iaj_cudZKx_RDmdtvud2BebO2COc2t1ip4omNkXpvw/viewform?embedded=true" 
+        width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0">Načítání…</iframe>
     </div>
 
     <div class="image-line-container">
@@ -391,6 +392,30 @@
     </div>
 
     <div class="container last-component">
+        <h1 id="lide">Důležití lidé</h1>
+        <p>Rádi bychom vám představili osoby, které jsou naprosto úžasné a pomáhají nám s organizací svatby a v den svatby budou mít vše na starosti. Děkujeme moc Lucce a Zdendovi.</p>
+        <p>Každopádně před svatbou si většinu věcí zařizujeme sami, tak prosím pište případně mě. Ať nezatěžujeme Lucku a Zdendu dokud to nebude nutné. 
+            V den svatby již ideálně nic řešit nebudu. Děkuju moc za pochopení. </p>
+        <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-8 card d-flex flex-column align-items-center">
+                <h2>Lucie Lutovská Hanková  &  Zdeněk Lutovský</h2>
+                <img src="images/zdenda-a-lucka.png" alt="Lucie" class="img-fluid" width="500px">
+                <p>Lucie a Zdeněk jsou naši svatební koordinátoři. Mají vše na starosti v den svatby a hodně věcí nám pomáhájí zařizovat. 
+                    Děkujeme vám za pomoc a podporu.</p>
+                <p>E-mail: lucie.hankova@zsduhovacesta.cz</p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-line-container">
+        <hr class="vertical-line">
+        <img src="images/icons/moto_final.png" class="moto-separation">
+        <hr class="vertical-line">
+    </div>
+
+    <div class="container last-component">
         <h1 id="kontakt">Kontakt</h1>
         <p>Pokud máte jakékoli dotazy a připomínky, tak prosím pište na email: <b>info@katestunt.com</b></p>
     </div>
@@ -400,6 +425,8 @@
     <footer class="footer">
         <p>&copy; Kateřina Jandová (ne na dlouho =D)</p>
     </footer>
+
+    <a href="#" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -453,6 +480,28 @@
         const updateInterval = setInterval(updateCountdown, 1000);
         updateCountdown();
 
+
+    // Get the button
+    var mybutton = document.getElementById("return-to-top");
+
+    // When the user scrolls down 300px from the top of the document, show the button
+    window.onscroll = function() {
+    scrollFunction();
+    };
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener('click', function(){
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    });
     </script>
 
 </body>

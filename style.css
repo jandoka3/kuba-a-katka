@@ -1,7 +1,13 @@
+:root {
+    --primary-color: #F18C02;
+    /* --primary-color: #00FF8E; */
+    /* Přidejte další barvy jako proměnné zde, pokud je potřebujete */
+  }
+
 h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
-    color: #00FF8E;
+    color: var(--primary-color);
     text-shadow: 1px 1px 3px #000000;
     text-align: center;
     padding-bottom: 10px;
@@ -82,7 +88,7 @@ img {
 }
 
 .navbar-brand {
-    color: #00FF8E !important;
+    color: var(--primary-color) !important;
     font-family: 'Dancing Script', cursive;
     font-size: 2.5rem;
     text-shadow: 1px 1px 3px #000000;
@@ -177,7 +183,7 @@ img {
     /* bílý text */
     text-align: center;
     /* zarovnání textu na střed */
-    padding: 3px 0;
+    padding: 1px 0;
     /* odsazení nahoře a dole */
     position: fixed;
     /* fixní pozice */
@@ -204,13 +210,13 @@ img {
     align-items: center;
     width: 60px;
     height: 60px;
-    border: 2px solid #7CFC00; /* barva vašeho výběru */
+    border: 2px solid var(--primary-color); /* barva vašeho výběru */
     border-radius: 50%;
     background-color: white; /* nebo jiná barva podle vašeho výběru */
     text-align: center;
     line-height: 30px;
     font-size: 14px; /* velikost ikony */
-    color: #7CFC00; /* barva ikony */
+    color: var(--primary-color); /* barva ikony */
     margin: 0 auto;
   }
   
@@ -222,7 +228,7 @@ img {
     top: -20px; /* Začátek čáry pod ikonou */
     height: 100%; /* nebo jakákoliv hodnota podle délky obsahu */
     width: 2px; /* šířka čáry */
-    background-color: #7CFC00; /* barva čáry */
+    background-color: var(--primary-color); /* barva čáry */
     z-index: -1; /* zařazení pod obsah */
   }
 
@@ -233,7 +239,7 @@ img {
     padding-top: 20px;
 }
 .event {
-    border: 5px solid #7CFC00;
+    border: 5px solid var(--primary-color);
     margin-bottom: 40px;
     padding: 15px;
     border-radius: 15px;
@@ -288,3 +294,39 @@ img {
  .after-places {
     margin-top: 150px;
  }
+
+ #return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px; /* Změňte tuto hodnotu, pokud používáte jinou velikost než 50px */
+    color: white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+#return-to-top i {
+    color: white; /* nebo barvu, kterou preferujete */
+    font-size: 20px; /* Velikost ikony FontAwesome */
+}
+
+#return-to-top:hover {
+    background: #dddddd;
+    color: #00FF8E;
+}
+
+#return-to-top:hover i {
+    color: #ffffff;
+}
