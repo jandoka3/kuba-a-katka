@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+
+    <title>Kuba a Katka</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Kuba <span class="ampersand">&</span> Katka</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">ÚVOD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#o-svatbe">O SVATBĚ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#program">PROGRAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mista">MÍSTA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mista">SPANÍ</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">LIDÉ</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vase-ucast">VAŠE ÚČAST</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#svatebni-dary">SVATEBNÍ DARY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontakt">KONTAKT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/spolecna-gumovacka.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="carousel-caption-heading">Kuba & Katka</h5>
+                    <div>se budou brát 27. července 2024</div>
+                    <div class="countdown-container">
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="days">00</span>
+                                <span class="text">dny</span>
+                            </div>
+                        </div>
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="hours">00</span>
+                                <span class="text">hodiny</span>
+                            </div>
+                        </div>
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="minutes">00</span>
+                                <span class="text">minuty</span>
+                            </div>
+                        </div>
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="seconds">00</span>
+                                <span class="text">sekundy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/koulovacka.JPG" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="carousel-caption-heading">Kuba & Katka</h5>
+                    <div>se budou brát 27. července 2024</div>
+                    <div class="countdown-container">
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="days2">00</span>
+                                <span class="text">dny</span>
+                            </div>
+                        </div>
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="hours2">00</span>
+                                <span class="text">hodiny</span>
+                            </div>
+                        </div>
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="minutes2">00</span>
+                                <span class="text">minuty</span>
+                            </div>
+                        </div>
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="seconds2">00</span>
+                                <span class="text">sekundy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/pusa.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="carousel-caption-heading">Kuba & Katka</h5>
+                    <div>se budou brát 27. července 2024</div>
+                    <div class="countdown-container">
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="days3">00</span>
+                                <span class="text">dny</span>
+                            </div>
+                        </div>
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="hours3">00</span>
+                                <span class="text">hodiny</span>
+                            </div>
+                        </div>
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="minutes3">00</span>
+                                <span class="text">minuty</span>
+                            </div>
+                        </div>
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="seconds3">00</span>
+                                <span class="text">sekundy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="image-line-container">
+        <hr class="vertical-line">
+        <img src="images/icons/moto_final.png" class="moto-separation">
+        <hr class="vertical-line">
+    </div>
+
+    <div class="container">
+        <h1 id="o-svatbe">O svatbě</h1>
+        <p>Rádi bychom vás přivítali na našem svatebním webu, kde naleznete ty nejdůležitější informace k našemu
+            významnému dni. Už se na vás všechny moc těšíme!
+        </p>
+
+        <p>V první řadě si chceme tento pro nás významný den s vámi všemi užít. Tudíž chceme, aby se každý cítil dobře a
+            zvolil si oblečení na odpolední zábavu dle jeho nebo jejích představ,
+            jen tedy na obřad bychom rádi slušnější oděv.
+            Obřad budeme mít na starém nevyužívaném letišti, ale přesto bychom vás rádi požádali, aby pánové přišli na
+            obřad v obleku, případně prosím aspoň o černé kalhoty a košili. Slečny a dámy,
+            aby se oblékli slavnostně a vyhnuly se bílým a červeným šatům jak je na svatbách zvykem. Pokud si chcete
+            vzít podpatky, tak to v nich zvládnete.
+            Budeme se pohybvat buď po asfaltu či potom v kulturním domě a okolí.
+        </p>
+
+        <p>Po obřadu bude následovat pár fotografíí. Nevěsta se v rychlosti převlékne a bude následovat "první tanec
+            nevěsty a ženicha". Další focení, natáčení a přesun do kulturního domu ve vesnici Březno.
+            Přesouvat se budeme buď na motorkách a nebo auty. V kulturním domě bude následovat jídlo, pití a zábava. Po
+            obřadu se můžete převléknout do čeho budete chtít. :-)
+        </p>
+
+        <p>Dále prosíme aby nikdo neunášel nevěstu. Nevěsta by si tento den ráda užila s vámi a ne někde čekat než si
+            ženich všimne, že se zrovna nikde nebaví s kamarádkama, ale že je vlastně pryč.
+            Děkujeme moc za pochopení a těšíme se na vás všechny. :-)</p>
+        </p>
+    </div>
+
+    <div class="image-line-container">
+        <hr class="vertical-line">
+        <img src="images/icons/moto_final.png" class="moto-separation">
+        <hr class="vertical-line">
+    </div>
+
+    <div class="container">
+        <h1 id="program">Program</h1>
+        <p>Je možné, že program ještě trochu upravíme, tak jej doporučujeme průběžně sledovat! A ještě se může i v průběhu svatby měnit. :-D Určitě se taky
+            můžete těšit na překvapení 😉</p>
+        <div class="timeline">
+            <div class="timeline-icon"><i class="far fa-calendar-alt fa-2xl"></i></div>
+            <div class="timeline-content">
+                <div class="program">
+                    <div class="event">
+                        <h2>Příjezd hostů na letiště Březno</h2>
+                        <p class="time">12:30</p>
+                    </div>
+                    <div class="event">
+                        <h2>Obřad</h2>
+                        <p class="time">13:00</p>
+                    </div>
+                    <div class="event">
+                        <h2>Lehká stunt ridingová show novomanželů a přátel + focení</h2>
+                        <p class="time">13:45</p>
+                    </div>
+                    <div class="event">
+                        <h2>Přejezd z letiště do kulturního domu ve vesnici Březno</h2>
+                        <p class="time">14:30</p>
+                    </div>
+                    <div class="event">
+                        <h2>Raut a párty</h2>
+                        <p class="time">14:35</p>
+                    </div>
+                    <div class="event">
+                        <h2>Krájení dortu</h2>
+                        <p class="time">16:00</p>
+                    </div>
+                    <div class="event">
+                        <h2>První tanec</h2>
+                        <p class="time">17:00</p>
+                    </div>
+                    <div class="event">
+                        <h2>Večerní program</h2>
+                        <p class="time">18:00</p>
+                    </div>
+                    <div class="event">
+                        <h2>Kapela Schimpi Band</h2>
+                        <p class="time"></p>
+                    </div>
+                    <div class="event">
+                        <h2>DJ</h2>
+                        <p class="time"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="image-line-container">
+        <hr class="vertical-line">
+        <img src="images/icons/moto_final.png" class="moto-separation">
+        <hr class="vertical-line">
+    </div>
+
+    <div id="mista" class="background-section">
+    <div class="container">
+        <h1 id="mista">Důležitá místa</h1>
+        <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-4 card">
+                <h2>Obřad</h2>
+                <h3>Letiště Březno u Chomutova</h3>
+                <p><a href="https://maps.app.goo.gl/9jfQ5de7FyQrpeL88" target="_blank">
+                    <i class="fas fa-map-marked-alt"></i>
+                  </a></p>
+                  <p>431 44 Droužkovice</p>
+                <p>Své ano si řekneme na místě, kde trávíme hodiny a hodiny se svými motorkami. Po obřadu bude i malé ježdění.</p>
+              </div>
+              <div class="col-md-4 card">
+                <h2>Hostina</h2>
+                <h3>Kulturní dům Březno</h3>
+                <p><a href="https://maps.app.goo.gl/jB1rq45qPXfjFhFp7" target="_blank">
+                    <i class="fas fa-map-marked-alt"></i>
+                  </a></p>
+                <p>Gen. Svobody 431, 431 45 Březno u Chomutova</p>
+                <p>Po obřadu a malém ježdění se přesuneme do Kulturního domu ve vesnici Březno. Tam již bude celý další program.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="image-line-container after-places">
+        <hr class="vertical-line">
+        <img src="images/icons/moto_final.png" class="moto-separation">
+        <hr class="vertical-line">
+    </div>
+
+    <div class="container">
+        <h1 id="mista">Spaní</h1>
+        <p>Přespání jsme pro vás zařídilí trošku punkovějšího rázu a proto necháme na vás, kdo toto přespání využije a kdo ne. 
+            Domluvili jsme louku, která je hned vedle kulturního domu. Na louce bude možné si postavit stan a přespat v něm. 
+            Je také možné tam spát pod širákem apod. Ve chvíli, kdy odejdeme všichni z kulturního domu, tak kulturní dům se musí zamknout, 
+            ale budou otevřeny celou noc nově zrekontstruované veřejné záchody ihned vedle kulturního domu. Sprchy bohužel zajistit nedokážeme, tak to snad jednu noc zvládneme. ;-) 
+        </p>
+        <p>Samozřejmě je možné přespat i ve svém autě. Bohužel nevím, kolik přijede aut a kolik bude volných parkovacích míst, která jsou přímo přilehlá. 
+            Tudíž prosím vyplňte do formuláře jak a v čem byste chtěli přespat a my podle toho zkusíme zařídit i bližší parkování pro spáče na místě.
+        </p>
+        <p>V Březně bohužel není žádné ubytovací zařízení. Nejbližší hotely a penziony jsou v Chomutově. Budeme mít zařízený odvoz do Chomutova a okolí, 
+            takže se nemusíte bát, že byste se nemohli dostat zpět na místo svého přespání pokud byste se rozhodli zamluvit si hotel.
+        </p>
+    </div>
+
+    <div class="image-line-container">
+        <hr class="vertical-line">
+        <img src="images/icons/moto_final.png" class="moto-separation">
+        <hr class="vertical-line">
+    </div>
+
+    <div class="container">
+        <h1 id="vase-ucast">Vaše účast</h1>
+        <p>Prosím o vyplnění krátkého dotazníku. Moc mi to pomůže s organizací a plánováním, abychom pro vás mohli udělat maximum.</p>
+
+    </div>
+
+    <div class="image-line-container">
+        <hr class="vertical-line">
+        <img src="images/icons/moto_final.png" class="moto-separation">
+        <hr class="vertical-line">
+    </div>
+
+    <div class="container">
+        <h1 id="vase-ucast">Svatební dary</h1>
+        <p>Svatebčané naši milí, dovolte nám prosbičku,
+            raději než věcné dary, naplňte nám kasičku.
+            Mnohokrát Vám děkujeme za každičký halíř,
+            stokrát lepší než nést domů stodesátý talíř.</p>
+        <p>Abychom vám to co nejvíce usnadnili a navíc se rádi držíme s dobou, tak jsme pro vás vytvořili QR kódy pro platbu. Budou i na místě svatby. 
+            Každopádně do poznámky platby nám můžete napsat cokoli. :-)</p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 card d-flex flex-column align-items-center">
+                <h2>Na "rodinné" auto</h2>
+                <img src="images/auto.webp" alt="Rodinné auto" class="img-fluid">
+                <p class="left-text">Rádi bychom méně jezdili každý zvlášť svým autem a byli více spolu. 
+                    Případně i s malým přírůstkem by se nám hodilo auto, kde budu mít já s prckem zázemí a zároveň budu moci Kubu doprovázet na všech akcích.</p>
+                <img src="images/qr-dar-auto.png" alt="QR kód pro platbu na rodinné auto" class="smaller-image d-flex">
+                </div>
+                <div class="col-md-4 card d-flex flex-column align-items-center">
+                <h2>Na svatební cestu</h2>
+                <img src="images/cesta.webp" alt="Svatební cesta" class="img-fluid">
+                <p class="left-text">S Kubou jsme ještě na společné dovolené bez motorek na déle než jeden den nikde nebyli. Doufáme, že se nám to zadaří na naši společnou svatební cestu.</p>
+                <img src="images/qr-dar-cesta.png" alt="QR kód pro platbu na svatební cestu" class="smaller-image d-flex">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-line-container">
+        <hr class="vertical-line">
+        <img src="images/icons/moto_final.png" class="moto-separation">
+        <hr class="vertical-line">
+    </div>
+
+    <div class="container last-component">
+        <h1 id="kontakt">Kontakt</h1>
+        <p>Pokud máte jakékoli dotazy a připomínky, tak prosím pište na email: <b>info@katestunt.com</b></p>
+    </div>
+
+
+
+    <footer class="footer">
+        <p>&copy; Kateřina Jandová (ne na dlouho =D)</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        fetch('components/carousel-text.html')
+            .then(response => response.text())
+            .then(data => {
+                let elements = document.getElementsByClassName('carousel-text');
+                for (let i = 0; i < elements.length; i++) {
+                    elements[i].innerHTML = data;
+                }
+            });
+
+
+        function updateCountdown() {
+            const countdownDate = new Date("2024-07-27T13:00:00").getTime();
+
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+
+            document.getElementById('days2').textContent = days;
+            document.getElementById('hours2').textContent = hours;
+            document.getElementById('minutes2').textContent = minutes;
+            document.getElementById('seconds2').textContent = seconds;
+
+            document.getElementById('days3').textContent = days;
+            document.getElementById('hours3').textContent = hours;
+            document.getElementById('minutes3').textContent = minutes;
+            document.getElementById('seconds3').textContent = seconds;
+
+            if (distance < 0) {
+                clearInterval(updateInterval);
+                // Místo odpočtu můžeš zobrazit zprávu
+                document.querySelector('.countdown-container').innerHTML = "Událost již proběhla";
+            }
+        }
+
+        const updateInterval = setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+    </script>
+
+</body>
+
+</html>

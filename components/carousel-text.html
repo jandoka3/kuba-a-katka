@@ -1,0 +1,58 @@
+<div class="carousel-caption d-none d-md-block">
+    <h5 class="carousel-caption-heading">Kuba & Katka</h5>
+    <p>se budou brát 27. července 2024</p>
+    <div class="countdown-container">
+        <div class="time-circle-bg">
+            <div class="time-circle">
+                <span class="number" id="days">00</span>
+                <span class="text">dny</span>
+            </div>
+        </div>
+        <div class="time-circle-bg">
+            <div class="time-circle">
+                <span class="number" id="hours">00</span>
+                <span class="text">hodiny</span>
+            </div>
+        </div>
+        <div class="time-circle-bg">
+            <div class="time-circle">
+                <span class="number" id="minutes">00</span>
+                <span class="text">minuty</span>
+            </div>
+        </div>
+        <div class="time-circle-bg">
+            <div class="time-circle">
+                <span class="number" id="seconds">00</span>
+                <span class="text">sekundy</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function updateCountdown() {
+            const countdownDate = new Date("2024-07-27T13:00:00").getTime();
+
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+
+            if (distance < 0) {
+                clearInterval(updateInterval);
+                // Místo odpočtu můžeš zobrazit zprávu
+                document.querySelector('.countdown-container').innerHTML = "Událost již proběhla";
+            }
+        }
+
+        const updateInterval = setInterval(updateCountdown, 1000);
+        updateCountdown();
+</script>

@@ -1,0 +1,290 @@
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #00FF8E;
+    text-shadow: 1px 1px 3px #000000;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 90px;
+    margin-top: -90px;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-size: 1.7rem;
+}
+
+p {
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+    color: dimgray;
+    text-align: center;
+}
+
+.left-text {
+    text-align: left;
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+    color: dimgray;
+    margin: 10px;
+}
+
+body {
+    margin-top: 70px;
+    /* nahraďte 70px výškou vaší hlavičky */
+    
+    font-family: "Open Sans", sans-serif;
+    background-color: #ffffff;
+    color: dimgray;
+}
+
+img {
+    margin: 10px;
+}
+
+.smaller-image {
+    width: 200px;
+    align-items: center;
+}
+
+.navbar {
+    padding-top: 0.3125rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 0.3125rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* aby hlavička byla vždy nahoře */
+    background-color: white;
+}
+
+.navbar-custom {
+    background-color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-link {
+    color: black !important;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    color: #00FF8E !important;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+.ampersand {
+    color: black;
+}
+
+.d-block {
+    height: 90vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-shadow: 3px 3px 4px #000000;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carousel-caption-heading {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem !important;
+}
+
+.countdown-container {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    justify-content: center;
+}
+
+.time-circle-bg {
+    background-image: url('images/icons/flower.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0em;
+    padding-left: 0.9em;
+    padding-right: 1.2em;
+    height: 5.5em;
+}
+
+.time-circle {
+    text-align: center;
+    margin: 25px;
+}
+
+.number {
+    display: block;
+    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 0px;
+}
+
+.text {
+    color: #fff;
+    font-size: 0.7em !important;
+    margin-top: 0px;
+    /* Přidej další styly pro text, jak potřebuješ */
+}
+
+.image-line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moto-separation {
+    height: 150px;
+}
+
+.vertical-line {
+    height: 10px;
+    width: 30em;
+    border: 1px solid black;
+    fill: #000000;
+    margin: 3px;
+    background: transparent;
+}
+
+.footer {
+    background-color: #808080;
+    /* šedá barva */
+    color: white;
+    /* bílý text */
+    text-align: center;
+    /* zarovnání textu na střed */
+    padding: 3px 0;
+    /* odsazení nahoře a dole */
+    position: fixed;
+    /* fixní pozice */
+    left: 0;
+    /* zarovnání vlevo */
+    bottom: 0;
+    /* zarovnání dole */
+    width: 100%;
+    /* šířka 100% */
+}
+
+.last-component {
+    margin-bottom: 150px;
+}
+
+.timeline-icon, .timeline-content {
+    position: relative;
+  }
+  
+  /* Stylování ikony */
+  .timeline-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #7CFC00; /* barva vašeho výběru */
+    border-radius: 50%;
+    background-color: white; /* nebo jiná barva podle vašeho výběru */
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px; /* velikost ikony */
+    color: #7CFC00; /* barva ikony */
+    margin: 0 auto;
+  }
+  
+  /* Svislá čára */
+  .timeline-content::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* Centrování čáry */
+    top: -20px; /* Začátek čáry pod ikonou */
+    height: 100%; /* nebo jakákoliv hodnota podle délky obsahu */
+    width: 2px; /* šířka čáry */
+    background-color: #7CFC00; /* barva čáry */
+    z-index: -1; /* zařazení pod obsah */
+  }
+
+.program {
+    width: 60%;
+    margin: 20px auto;
+    max-width: 600px;
+    padding-top: 20px;
+}
+.event {
+    border: 5px solid #7CFC00;
+    margin-bottom: 40px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.event h2 {
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+.event p {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* Mista */
+.background-section {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    /* background-image: url('images/pole.jpg');  */
+    background-image: url('images/svatebni_obrad_ai7.webp'); 
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+.card {
+    background-color: #fff; /* bílé pozadí */
+    margin: 40px;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px; /* mírně zaoblené rohy */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* lehký stín */
+  }
+
+  .card img {
+    max-width: 100%; /* zajišťuje, že obrázek nepřesáhne šířku karty */
+    height: auto; /* udržuje poměr stran obrázku */
+    display: block; /* zabraňuje nechtěným mezerám pod obrázkem */
+}
+  
+  /* Responzivní úprava pro malé obrazovky */
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  
+ .after-places {
+    margin-top: 150px;
+ }
