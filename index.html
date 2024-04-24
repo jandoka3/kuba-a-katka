@@ -25,8 +25,48 @@
 </head>
 
 <body>
+    
 
-    <nav class="navbar navbar-expand-lg navbar-custom">
+    <nav class="navbar navbar-expand-xxl navbar-light bg-light">
+        <a class="navbar-brand" href="#">Kuba <span class="ampersand">&</span> Katka</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">ÚVOD</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#o-svatbe">O SVATBĚ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#program">PROGRAM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mista">MÍSTA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mista">SPANÍ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#vase-ucast">VAŠE ÚČAST</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#svatebni-dary">SVATEBNÍ DARY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lide">LIDÉ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontakt">KONTAKT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Kuba <span class="ampersand">&</span> Katka</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -65,7 +105,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -436,6 +476,20 @@
         crossorigin="anonymous"></script>
 
     <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+                var navbar = document.getElementById('navbarSupportedContent');
+                var navbarToggler = document.querySelector('.navbar-toggler');
+                var navLinks = navbar.querySelectorAll('.nav-link');
+
+                navLinks.forEach(function (link) {
+                    link.addEventListener('click', function () {
+                        if (!navbarToggler.classList.contains('collapsed')) {
+                            navbarToggler.click();
+                        }
+                    });
+                });
+            });
 
         fetch('components/carousel-text.html')
             .then(response => response.text())
