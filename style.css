@@ -121,6 +121,11 @@ img {
     font-size: 4rem !important;
 }
 
+.carousel-caption-heading-mobile {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1rem !important;
+}
+
 .countdown-container {
     display: flex;
     /* justify-content: space-around; */
@@ -329,4 +334,18 @@ img {
 
 #return-to-top:hover i {
     color: #ffffff;
+}
+
+/* Skrytí desktopového karuselu na malých obrazovkách */
+@media (max-width: 768px) {
+    .desktop-carousel {
+        display: none;
+    }
+}
+
+/* Skrytí mobilního karuselu na velkých obrazovkách */
+@media (min-width: 769px) {
+    .mobile-carousel {
+        display: none;
+    }
 }
