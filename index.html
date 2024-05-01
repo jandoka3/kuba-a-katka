@@ -79,7 +79,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="images/spolecna-gumovacka.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-md-block">
                     <h5 class="carousel-caption-heading">Kuba & Katka</h5>
                     <div>se budou brát 27. července 2024</div>
                     <div class="countdown-container">
@@ -112,7 +112,7 @@
             </div>
             <div class="carousel-item">
                 <img src="images/koulovacka.JPG" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-m-block">
                     <h5 class="carousel-caption-heading">Kuba & Katka</h5>
                     <div>se budou brát 27. července 2024</div>
                     <div class="countdown-container">
@@ -145,7 +145,7 @@
             </div>
             <div class="carousel-item">
                 <img src="images/pusa.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-m-block">
                     <h5 class="carousel-caption-heading">Kuba & Katka</h5>
                     <div>se budou brát 27. července 2024</div>
                     <div class="countdown-container">
@@ -202,23 +202,65 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="images/wheelie.jpg" class="d-block" alt="...">
-                <div class="carousel-caption d-none">
-                    <span class="carousel-caption-heading-mobile">Kuba & Katka</span>
-                    <div>svatba 27.7.2024</div>
+                <div class="carousel-caption d-s-block">
+                    <h5 class="carousel-caption-heading">Kuba & Katka</h5>
+                    <div>se budou brát 27. července 2024</div>
+                    <div class="countdown-container">
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="days01">00</span>
+                                <span class="text">dny</span>
+                            </div>
+                        </div>
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="hours01">00</span>
+                                <span class="text">hodiny</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="images/stoppie.JPG" class="d-block" alt="...">
-                <div class="carousel-caption d-none">
-                    <h5 class="carousel-caption-heading-mobile">Kuba & Katka</h5>
-                    <div>svatba 27.7.2024</div>
+                <div class="carousel-caption d-s-block">
+                    <h5 class="carousel-caption-heading">Kuba & Katka</h5>
+                    <div>se budou brát 27. července 2024</div>
+                    <div class="countdown-container">
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="days02">00</span>
+                                <span class="text">dny</span>
+                            </div>
+                        </div>
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="hours02">00</span>
+                                <span class="text">hodiny</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="images/pusa.jpg" class="d-block" alt="...">
-                <div class="carousel-caption d-none">
-                    <h5 class="carousel-caption-heading-mobile">Kuba & Katka</h5>
-                    <div>svatba 27.7.2024</div>
+                <div class="carousel-caption d-s-block">
+                    <h5 class="carousel-caption-heading">Kuba & Katka</h5>
+                    <div>se budou brát 27. července 2024</div>
+                    <div class="countdown-container">
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="days03">00</span>
+                                <span class="text">dny</span>
+                            </div>
+                        </div>
+                        <div class="time-circle-bg">
+                            <div class="time-circle">
+                                <span class="number" id="hours03">00</span>
+                                <span class="text">hodiny</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -243,7 +285,7 @@
     <div class="container">
         <h1 id="o-svatbe">O svatbě</h1>
         <p>Rádi bychom vás přivítali na našem svatebním webu, kde naleznete ty nejdůležitější informace k našemu
-            významnému dni. Už se na vás všechny moc těšíme!
+            významnému dni <b>27.7.2024</b>. Už se na vás všechny moc těšíme!
         </p>
 
         <p>V první řadě si chceme tento pro nás významný den s vámi všemi užít. Tudíž chceme, aby se každý cítil dobře a
@@ -532,6 +574,15 @@
             document.getElementById('hours3').textContent = hours;
             document.getElementById('minutes3').textContent = minutes;
             document.getElementById('seconds3').textContent = seconds;
+
+            document.getElementById('days01').textContent = days;
+            document.getElementById('hours01').textContent = hours;
+
+            document.getElementById('days02').textContent = days;
+            document.getElementById('hours02').textContent = hours;
+
+            document.getElementById('days03').textContent = days;
+            document.getElementById('hours03').textContent = hours;
 
             if (distance < 0) {
                 clearInterval(updateInterval);
