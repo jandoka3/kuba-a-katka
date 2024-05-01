@@ -281,7 +281,7 @@ img {
 .background-section {
     position: relative;
     width: 100%;
-    height: 350px;
+    height: 700px;
     /* background-image: url('images/pole.jpg');  */
     background-image: url('images/svatebni_obrad_ai7.webp'); 
     background-size: cover;
@@ -351,16 +351,27 @@ img {
     color: #ffffff;
 }
 
-/* Skrytí desktopového karuselu na malých obrazovkách */
+/* Mobilni zarizeni */
 @media (max-width: 768px) {
     .desktop-carousel {
         display: none;
     }
 }
 
-/* Skrytí mobilního karuselu na velkých obrazovkách */
+@media (max-width: 768px) {
+    .background-section {
+        height: 800px;
+    }
+}
+
+/* Desktopova zarizeni - PC */
 @media (min-width: 769px) {
     .mobile-carousel {
         display: none;
+    }
+}
+@media (min-width: 769px) {
+    .background-section {
+        height: 350px;
     }
 }
